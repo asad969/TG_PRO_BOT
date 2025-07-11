@@ -11,7 +11,7 @@ chat_id = os.getenv("CHAT_ID")
 bot = Bot(token=bot_token)
 
 def send_update():
-    now = datetime.now().strftime("%d-%b-%y %I:%M %p")
+    now = datetime.now(ZoneInfo("Asia/Dhaka")).strftime("%d-%b-%y %I:%M %p")
     message = f"🕒 6H Live Signal Update ({now})\n\n" \
               "📊 BTCUSDT\nTrend: Uptrend\nStochRSI: 85 → 🔻 Sell Zone\n" \
               "RSI: 81 → Overbought\nMACD: Selling Pressure\nATR: Medium\n→ Entry: 59000\n→ TP: 60500\n→ SL: 58000"

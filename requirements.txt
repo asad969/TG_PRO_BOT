@@ -1,4 +1,4 @@
 python-telegram-bot==13.15
 APScheduler
 python-dotenv
-urllib3
+urllib3==1.26.16
